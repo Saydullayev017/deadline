@@ -5,7 +5,7 @@
  * - Pomodoro timer with customizable work/break periods
  * - Task management system
  * 
- * @author Saydullaev Javlonbek
+ * @author Javlonbek Saydullaev
  * @version 1.0.0
  */
 
