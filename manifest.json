@@ -1,10 +1,10 @@
 {
-  "id": "date-timer-pomodoro-pro",
-  "name": "Date Timer Pomodoro Pro",
+  "id": "deadline",
+  "name": "Deadline",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
   "description": "Professional productivity plugin with calendar, timer, and task management",
-  "author": "Amir",
+  "author": "Saydullaev Javlonbek",
   "isDesktopOnly": false,
   "main": "main.js",
   "styles": [

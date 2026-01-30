@@ -1,11 +1,11 @@
 /**
- * Date Timer Pomodoro Pro Plugin
+ * Deadline Plugin
  * A comprehensive productivity plugin for Obsidian featuring:
  * - Calendar with daily file creation
  * - Pomodoro timer with customizable work/break periods
  * - Task management system
  * 
- * @author Amir
+ * @author Saydullaev Javlonbek
  * @version 1.0.0
  */
 
@@ -13,7 +13,7 @@
 const { Plugin, ItemView } = require("obsidian");
 
 // Unique identifier for the plugin view type
-const VIEW_TYPE = "date-timer-pomodoro-view";
+const VIEW_TYPE = "deadline-view";
 
 /**
  * Main view class that renders the calendar, timer, and task management interface
@@ -52,7 +52,11 @@ class SimpleWorkingView extends ItemView {
      * @returns {string} Human-readable view name
      */
     getDisplayText() {
-        return "Date Timer Pomodoro";
+        return "Deadline";
+    }
+
+    getIcon() {
+        return "calendar-days";
     }
 
     /**
@@ -297,7 +301,7 @@ class SimpleWorkingView extends ItemView {
                 await leaf.openFile(existingFile);
             } else {
                 // File doesn't exist: create with default template content
-                const content = `# ${dateStr}\n\n## Header 1\n\n- [ ] Task 1\n\n## Header 2\n\n- [ ] Task 2\n\n## Header 3\n\n- [ ] Task 3\n\n`;
+                const content = `# Header 1\n\n## Header 2\n\n### Header 3\n\n`;
                 const newFile = await this.app.vault.create(fileName, content);
                 const leaf = this.app.workspace.getLeaf(false);
                 await leaf.openFile(newFile);
@@ -805,8 +809,16 @@ module.exports = class SimpleTestPlugin extends Plugin {
         );
 
         // Add ribbon icon in the left sidebar for quick access
-        this.addRibbonIcon('calendar-days', 'Simple Test', () => {
+        this.addRibbonIcon('calendar-days', 'Deadline', () => {
             this.activateView();
+        });
+
+        this.addCommand({
+            id: 'open-deadline',
+            name: 'Open Deadline',
+            callback: () => {
+                this.activateView();
+            }
         });
 
         // Add command to palette for opening the plugin view

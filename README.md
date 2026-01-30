@@ -1,4 +1,4 @@
-# Date Timer Pomodoro Pro
+# Deadline
 
 A comprehensive productivity plugin for Obsidian that combines calendar functionality, Pomodoro timer, and task management into a single integrated workspace view.
 
@@ -41,21 +41,24 @@ A comprehensive productivity plugin for Obsidian that combines calendar function
 
 ### Method 1: Community Plugins (Recommended)
 1. Go to **Settings → Community Plugins → Browse**
-2. Search for "Date Timer Pomodoro Pro"
+2. Search for "Deadline"
 3. Click **Install** and then **Enable**
 
 ### Method 2: Manual Installation
-1. Download the latest release from [GitHub Releases](https://github.com/YOUR_USERNAME/date-timer-pomodoro-pro/releases)
-2. Extract the ZIP file to: `/Users/YOUR_USERNAME/.obsidian/plugins/date-timer-pomodoro-pro/`
+1. Download the latest release from [GitHub Releases](https://github.com/YOUR_USERNAME/deadline/releases)
+2. Extract the ZIP file to: `/Users/YOUR_USERNAME/.obsidian/plugins/deadline/`
 3. Restart Obsidian completely
 4. Go to **Settings → Community Plugins**
-5. Enable "Date Timer Pomodoro Pro" in the list
-6. Use the command palette (`Ctrl+P` or `Cmd+P`) and search for "Open Date Timer Pomodoro Pro"
+5. Enable "Deadline" in the list
+6. Use the command palette (`Ctrl+P` or `Cmd+P`) and search for "Open Deadline"
 
-### Method 2: Community Plugins (Future)
-1. Go to **Settings → Community Plugins → Browse**
-2. Search for "Date Timer Pomodoro Pro"
-3. Click **Install** and then **Enable**
+### Method 2: Manual Installation
+1. Download the latest release from [GitHub Releases](https://github.com/YOUR_USERNAME/deadline/releases)
+2. Extract the ZIP file to: `/Users/YOUR_USERNAME/.obsidian/plugins/deadline/`
+3. Restart Obsidian completely
+4. Go to **Settings → Community Plugins**
+5. Enable "Deadline" in the list
+6. Use the command palette (`Ctrl+P` or `Cmd+P`) and search for "Open Deadline"
 
 ## Usage Guide
 
@@ -129,7 +132,7 @@ All visual elements use Obsidian's CSS variables, ensuring compatibility with:
 ## File Structure
 
 ```
-date-timer-pomodoro-pro/
+deadline/
  ├── main.js              # Main plugin logic and UI components
  ├── manifest.json         # Obsidian plugin metadata
  ├── package.json          # Node.js package configuration
@@ -268,6 +271,6 @@ If you find this plugin helpful, please consider:
 
 ---
 
-**Thank you for using Date Timer Pomodoro Pro!** 🎉
+**Thank you for using Deadline!** 🎉
 
 Built with ❤️ for the Obsidian community.
