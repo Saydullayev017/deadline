@@ -1,0 +1,14 @@
+{
+  "name": "date-timer-pomodoro-pro",
+  "version": "2.0.0",
+  "description": "Professional plugin with calendar, timers and task manager",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["obsidian", "plugin", "calendar", "timer", "pomodoro", "tasks"],
+  "author": "Amir",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
