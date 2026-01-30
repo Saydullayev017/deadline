@@ -5,6 +5,7 @@
   "minAppVersion": "0.15.0",
   "description": "Professional productivity plugin with calendar, timer, and task management",
   "author": "Javlonbek Saydullaev",
+  "authorUrl": "https://github.com/Saydullayev017",
   "isDesktopOnly": false,
   "main": "main.js",
   "styles": [

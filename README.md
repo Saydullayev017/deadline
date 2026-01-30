@@ -1,276 +1,165 @@
 # Deadline
 
-A comprehensive productivity plugin for Obsidian that combines calendar functionality, Pomodoro timer, and task management into a single integrated workspace view.
+**Deadline** is an all-in-one productivity plugin for **Obsidian** that combines a calendar, Pomodoro timer, and task manager into a single, clean workspace view.
 
-## Features
-
-### 📅 Calendar
-- **Monthly View**: Clean, interactive calendar showing the current month
-- **Navigation**: Browse between months with previous/next buttons
-- **Daily File Creation**: Click any date to create/open a daily note (YYYY-MM-DD.md format)
-- **Today Highlighting**: Current date is visually highlighted
-- **Auto-Open**: Daily notes open automatically in new tabs when created
-- **Visual Feedback**: Success/error messages for file operations
-
-### ⏱️ Pomodoro Timer
-- **Flexible Timing**: Default 40-minute work sessions and 5-minute breaks
-- **Customizable Settings**: Adjust work and break durations through settings panel
-- **Visual Progress**: Animated progress bar shows elapsed time
-- **Large Display**: Clear MM:SS time display in monospace font
-- **Status Indicators**: Shows Ready/Running/Complete states
-- **Audio Feedback**: Completion sound when timer finishes
-- **Auto-Reset**: Automatically resets after completion with 2-second delay
-
-### 📋 Task Manager
-- **Quick Add**: Add tasks via input field with Enter key support
-- **Task List**: Visual list with checkboxes for each task
-- **Complete/Uncomplete**: Toggle task completion with visual feedback
-- **Delete Tasks**: Remove individual tasks with delete button
-- **Empty State**: Helpful message when no tasks exist
-- **Visual States**: Completed tasks show strikethrough and reduced opacity
-
-### 🎨 Professional Design
-- **Obsidian Integration**: Uses native CSS variables for theme compatibility
-- **Dark/Light Themes**: Seamlessly adapts to both light and dark modes
-- **Smooth Animations**: Hover effects, transitions, and micro-interactions
-- **Responsive Layout**: Adapts to different screen sizes and panel widths
-- **Custom Scrollbars**: Styled scrollbars for task lists
-- **Professional Typography**: Clean, readable interface with proper spacing
-
-## Installation
-
-### Method 1: Community Plugins (Recommended)
-1. Go to **Settings → Community Plugins → Browse**
-2. Search for "Deadline"
-3. Click **Install** and then **Enable**
-
-### Method 2: Manual Installation
-1. Download the latest release from [GitHub Releases](https://github.com/YOUR_USERNAME/deadline/releases)
-2. Extract the ZIP file to: `/Users/YOUR_USERNAME/.obsidian/plugins/deadline/`
-3. Restart Obsidian completely
-4. Go to **Settings → Community Plugins**
-5. Enable "Deadline" in the list
-6. Use the command palette (`Ctrl+P` or `Cmd+P`) and search for "Open Deadline"
-
-### Method 2: Manual Installation
-1. Download the latest release from [GitHub Releases](https://github.com/YOUR_USERNAME/deadline/releases)
-2. Extract the ZIP file to: `/Users/YOUR_USERNAME/.obsidian/plugins/deadline/`
-3. Restart Obsidian completely
-4. Go to **Settings → Community Plugins**
-5. Enable "Deadline" in the list
-6. Use the command palette (`Ctrl+P` or `Cmd+P`) and search for "Open Deadline"
-
-## Usage Guide
-
-### Calendar Operations
-
-#### Navigation
-- **Previous Month**: Click the left arrow button (◀)
-- **Next Month**: Click the right arrow button (▶)
-- **Current Month**: Navigate back to today using the month/year display
-
-#### Daily Note Creation
-1. Click on any date in the calendar
-2. A new file will be created with the format `YYYY-MM-DD.md`
-3. The file will contain a template with headers and checkbox tasks
-4. The file opens automatically in a new tab
-5. Green confirmation message appears briefly if successful
-
-### Timer Operations
-
-#### Basic Controls
-- **Start Timer**: Click the "Start" button (▶️) to begin countdown
-- **Pause Timer**: Click "Pause" (⏸️) to temporarily stop the timer
-- **Reset Timer**: Click "Reset" (🔄) to return to initial work duration
-
-#### Settings Configuration
-1. Click the **Settings** button to open the configuration panel
-2. Adjust **Work Duration**: Set work session length (1-180 minutes)
-3. Adjust **Break Duration**: Set break length (1-60 minutes)
-4. Click **Save** to apply changes or **Cancel** to discard
-5. Settings update the info display in real-time
-
-#### Timer Behavior
-- Timer counts down from the configured work duration
-- Progress bar fills as time elapses
-- Status changes from "Ready" → "Running" → "Complete!"
-- Audio notification plays when timer completes
-- Timer auto-resets after 2 seconds for next session
-
-### Task Management
-
-#### Adding Tasks
-1. Type task description in the input field
-2. Press **Enter** or click **Add** button
-3. Task appears in the list below with checkbox
-
-#### Managing Tasks
-- **Complete Task**: Click the checkbox to toggle completion status
-- **Delete Task**: Click the trash icon (🗑️) to remove task
-- **View Status**: Completed tasks show strikethrough text
-
-#### Task States
-- **Active**: Black text, white background
-- **Completed**: Strikethrough text, reduced opacity, gray background
-
-## Configuration
-
-### Default Settings
-- **Work Duration**: 40 minutes
-- **Break Duration**: 5 minutes
-- **File Format**: `YYYY-MM-DD.md`
-- **Template Content**: Predefined headers with checkbox tasks
-
-### Customization Options
-All visual elements use Obsidian's CSS variables, ensuring compatibility with:
-- Light themes
-- Dark themes  
-- Custom color schemes
-- Font preferences
-- System scaling settings
-
-## File Structure
-
-```
-deadline/
- ├── main.js              # Main plugin logic and UI components
- ├── manifest.json         # Obsidian plugin metadata
- ├── package.json          # Node.js package configuration
- ├── styles.css            # Plugin styling and animations
- ├── data/                # Directory for plugin data storage
- └── README.md             # This documentation file
-```
-
-## Technical Details
-
-### Plugin Architecture
-- **Framework**: Native Obsidian Plugin API (no external dependencies)
-- **Language**: JavaScript (ES6+ compatible)
-- **Styling**: CSS3 with CSS variables and animations
-- **Audio**: Web Audio API for completion sounds
-- **Storage**: Uses Obsidian's Vault API for file operations
-
-### Key Components
-
-#### SimpleWorkingView Class
-- Main UI component extending Obsidian's `ItemView`
-- Manages calendar, timer, and task sections
-- Handles user interactions and state management
-
-#### SimpleTestPlugin Class  
-- Main plugin class extending Obsidian's `Plugin`
-- Registers view type, ribbon icon, and commands
-- Manages plugin lifecycle events
-
-#### CSS Architecture
-- Modular organization with clear section comments
-- Responsive design using Flexbox and CSS Grid
-- Smooth animations and transitions
-- Cross-browser compatible with vendor prefixes
-
-## Development
-
-### Building from Source
-This plugin uses the standard Obsidian plugin structure with no build process required:
-
-1. Clone the plugin directory
-2. Modify source files as needed
-3. Reload the plugin in Obsidian
-4. Debug using browser developer tools
-
-### Extending Functionality
-The modular structure allows for easy extensions:
-- Add new calendar features in `addCalendarSection()`
-- Enhance timer capabilities in `addTimerSection()`
-- Expand task management in `addTasksSection()`
-- Update styling in organized CSS sections
-
-### Best Practices Followed
-- **No Memory Leaks**: Proper cleanup of intervals and event listeners
-- **Error Handling**: Try-catch blocks for file operations
-- **Accessibility**: Semantic HTML and proper labeling
-- **Performance**: Efficient DOM manipulation and event delegation
-- **Maintainability**: Clear code structure and comprehensive comments
-
-## Troubleshooting
-
-### Common Issues
-
-#### Plugin Not Loading
-- Verify plugin files are in the correct directory
-- Restart Obsidian completely
-- Check that the plugin is enabled in Settings
-- Review developer console for error messages
-
-#### Calendar Not Creating Files
-- Check vault permissions for file creation
-- Verify sufficient disk space
-- Ensure no conflicting files exist
-- Review Obsidian's error notifications
-
-#### Timer Not Working
-- Clear browser cache and reload plugin
-- Check if other plugins are interfering
-- Verify audio permissions for completion sound
-- Reset plugin settings to defaults
-
-#### Tasks Not Saving
-- Tasks are session-based by design
-- Restart plugin to clear task list
-- Consider persistent storage for future versions
-
-### Getting Help
-For issues, feature requests, or contributions:
-1. Check the developer console (F12) for error messages
-2. Review Obsidian's plugin documentation
-3. Test with other plugins disabled
-4. Create an issue in the plugin repository
-
-## Version History
-
-### v1.0.0 (Current)
-- Initial stable release
-- Complete calendar with daily file creation
-- Full-featured Pomodoro timer with settings
-- Task management system
-- Professional UI with animations
-- Dark/light theme support
-
-### Planned Features
-- Persistent task storage
-- Multiple timer presets
-- Calendar event integration
-- Export/import functionality
-- Custom templates
-- Statistics and tracking
-
-## License
-
-This plugin is licensed under the MIT License, allowing:
-- Free commercial and personal use
-- Modification and distribution
-- Inclusion in other projects
-- No warranty or liability
-
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-- Maintain the existing code style and structure
-- Add appropriate comments for new features
-- Test across different themes and screen sizes
-- Update documentation for user-facing changes
-- Submit pull requests with clear descriptions
-
-## Support
-
-If you find this plugin helpful, please consider:
-- ⭐ Rating it in the Obsidian Community Plugins browser
-- 🐛 Reporting issues to help improve stability  
-- 💡 Suggesting features for future development
-- 📝 Contributing documentation improvements
+It is designed to help you plan your day, stay focused, and manage tasks without switching between multiple plugins.
 
 ---
 
-**Thank you for using Deadline!** 🎉
+## ✨ Features
 
-Built with ❤️ for the Obsidian community.
+### 📅 Calendar
+- Monthly calendar view
+- Easy navigation between months
+- Click any date to create or open a daily note  
+- Daily notes use the format: `YYYY-MM-DD.md`
+- Automatically highlights today
+- Opens daily notes in a new tab
+
+### ⏱️ Pomodoro Timer
+- Default **40-minute work** and **5-minute break** sessions
+- Fully customizable work and break durations
+- Large, clear time display (MM:SS)
+- Animated progress bar
+- Status indicators: Ready / Running / Complete
+- Sound notification on completion
+- Automatically resets after finishing
+
+### 📋 Task Manager
+- Quickly add tasks with Enter key
+- Checkbox-based task list
+- Mark tasks as completed or active
+- Delete tasks individually
+- Clear empty-state messaging
+- Visual distinction for completed tasks
+
+### 🎨 Design & UX
+- Native Obsidian look and feel
+- Fully compatible with light and dark themes
+- Smooth animations and transitions
+- Responsive layout for different panel sizes
+- Uses Obsidian CSS variables for full theme support
+
+---
+
+## 🖼️ Screenshots
+- Main plugin view 
+![Deadline main view](screenshots/view.png) 
+- Calendar interaction  
+![Deadline main view](screenshots/calendar.png)
+- Pomodoro timer in action  
+![Deadline main view](screenshots/timer.png)
+- Task manager overview  
+![Deadline main view](screenshots/tasks.png)
+---
+
+## 📦 Installation
+
+### Method 1: Community Plugins (Recommended)
+1. Open **Settings → Community Plugins**
+2. Disable **Safe Mode**
+3. Click **Browse**
+4. Search for **Deadline**
+5. Click **Install** → **Enable**
+
+### Method 2: Manual Installation
+1. Download the latest release from  
+   👉 https://github.com/Saydullayev017/deadline/releases
+2. Extract the files into:
+   ```
+   ~/.obsidian/plugins/deadline/
+   ```
+3. Restart Obsidian
+4. Enable **Deadline** in **Settings → Community Plugins**
+
+---
+
+## ▶️ Opening the Plugin
+
+You can open Deadline using:
+- **Command Palette** → `Open Deadline`
+- Ribbon icon (if enabled)
+
+---
+
+## ⚙️ Configuration
+
+### Default Settings
+- Work duration: **40 minutes**
+- Break duration: **5 minutes**
+- Daily note format: `YYYY-MM-DD.md`
+
+### Customization
+All UI elements follow Obsidian’s theme variables, ensuring compatibility with:
+- Light and dark themes
+- Custom color schemes
+- Font and scaling preferences
+
+---
+
+## 📁 File Structure
+
+```
+deadline/
+ ├── main.js
+ ├── manifest.json
+ ├── styles.css
+ └── README.md
+```
+
+---
+
+## 🧪 Troubleshooting
+
+### Plugin Not Loading
+- Ensure the plugin is enabled
+- Restart Obsidian
+- Check the developer console for errors
+
+### Calendar Not Creating Files
+- Verify vault permissions
+- Ensure files with the same name do not already exist
+
+### Timer Issues
+- Disable conflicting plugins
+- Reset plugin settings
+- Restart Obsidian
+
+### Task Persistence
+- Tasks are currently stored per session  
+- Persistent task storage is planned for future versions
+
+---
+
+## 🗺️ Roadmap
+- Persistent task storage
+- Multiple Pomodoro presets
+- Custom daily note templates
+- Productivity statistics
+- Import / export support
+
+---
+
+## 📄 License
+
+MIT License — free for personal and commercial use.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.  
+Please open an issue or submit a pull request on GitHub.
+
+---
+
+## ❤️ Support
+
+If you find **Deadline** useful:
+- ⭐ Rate it in the Obsidian Community Plugins browser
+- 🐛 Report bugs or issues
+- 💡 Suggest new features
+
+---
+
+**Built with ❤️ for the Obsidian community.**
