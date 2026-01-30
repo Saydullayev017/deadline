@@ -6,7 +6,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 
 ---
 
-## ✨ Features
+## ✨ Features 
 
 ### 📅 Calendar
 - Monthly calendar view
