@@ -3,7 +3,7 @@
   "name": "Deadline",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "All-in-one productivity plugin with calendar, Pomodoro timer, and task manager",
+  "description": "All-in-one productivity plugin with calendar, Pomodoro timer, and task manager.",
   "author": "Javlonbek Saydullaev",
   "authorUrl": "https://github.com/Saydullayev017",
   "isDesktopOnly": false
