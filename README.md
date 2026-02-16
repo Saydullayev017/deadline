@@ -6,9 +6,9 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 
 ---
 
-## ✨ Features 
+## Features 
 
-### 📅 Calendar
+### Calendar
 - Monthly calendar view
 - Easy navigation between months
 - Click any date to create or open a daily note  
@@ -16,7 +16,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 - Automatically highlights today
 - Opens daily notes in a new tab
 
-### ⏱️ Pomodoro Timer
+### Pomodoro Timer
 - Default **40-minute work** and **5-minute break** sessions
 - Fully customizable work and break durations
 - Large, clear time display (MM:SS)
@@ -25,7 +25,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 - Sound notification on completion
 - Automatically resets after finishing
 
-### 📋 Task Manager
+### Task Manager
 - Quickly add tasks with Enter key
 - Checkbox-based task list
 - Mark tasks as completed or active
@@ -33,7 +33,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 - Clear empty-state messaging
 - Visual distinction for completed tasks
 
-### 🎨 Design & UX
+### Design & UX
 - Native Obsidian look and feel
 - Fully compatible with light and dark themes
 - Smooth animations and transitions
@@ -42,7 +42,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 - Main plugin view 
 ![Deadline main view](screenshots/view.png) 
 - Calendar interaction  
@@ -53,7 +53,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 ![Deadline main view](screenshots/tasks.png)
 ---
 
-## 📦 Installation
+## Installation
 
 ### Method 1: Community Plugins (Recommended)
 1. Open **Settings → Community Plugins**
@@ -97,7 +97,7 @@ All UI elements follow Obsidian’s theme variables, ensuring compatibility with
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 deadline/
@@ -109,7 +109,7 @@ deadline/
 
 ---
 
-## 🧪 Troubleshooting
+## Troubleshooting
 
 ### Plugin Not Loading
 - Ensure the plugin is enabled
@@ -131,7 +131,7 @@ deadline/
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 - Persistent task storage
 - Multiple Pomodoro presets
 - Custom daily note templates
@@ -146,14 +146,14 @@ MIT License — free for personal and commercial use.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome.  
 Please open an issue or submit a pull request on GitHub.
 
 ---
 
-## ❤️ Support
+## Support
 
 If you find **Deadline** useful:
 - ⭐ Rate it in the Obsidian Community Plugins browser
