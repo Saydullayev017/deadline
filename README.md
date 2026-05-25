@@ -5,6 +5,10 @@
 It is designed to help you plan your day, stay focused, and manage tasks without switching between multiple plugins.
 
 ---
+## view
+- Main plugin view 
+![Deadline main view](screenshots/view.png) 
+![Alt-текст](screenshots/gg.gif)
 
 ## Features 
 
@@ -42,15 +46,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 
 ---
 
-## Screenshots
-- Main plugin view 
-![Deadline main view](screenshots/view.png) 
-- Calendar interaction  
-![Deadline main view](screenshots/calendar.png)
-- Pomodoro timer in action  
-![Deadline main view](screenshots/timer.png)
-- Task manager overview  
-![Deadline main view](screenshots/tasks.png)
+
 ---
 
 ## Installation
@@ -64,7 +60,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 
 ### Method 2: Manual Installation
 1. Download the latest release from  
-   👉 https://github.com/Saydullayev017/deadline/releases
+   https://github.com/Saydullayev017/deadline/releases
 2. Extract the files into:
    ```
    ~/.obsidian/plugins/deadline/
@@ -74,7 +70,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 
 ---
 
-## ▶️ Opening the Plugin
+## Opening the Plugin
 
 You can open Deadline using:
 - **Command Palette** → `Open Deadline`
@@ -82,7 +78,7 @@ You can open Deadline using:
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Default Settings
 - Work duration: **40 minutes**
@@ -140,7 +136,7 @@ deadline/
 
 ---
 
-## 📄 License
+## License
 
 MIT License — free for personal and commercial use.
 
@@ -156,10 +152,10 @@ Please open an issue or submit a pull request on GitHub.
 ## Support
 
 If you find **Deadline** useful:
-- ⭐ Rate it in the Obsidian Community Plugins browser
-- 🐛 Report bugs or issues
-- 💡 Suggest new features
+- Rate it in the Obsidian Community Plugins browser
+- Report bugs or issues
+- Suggest new features
 
 ---
 
-**Built with ❤️ for the Obsidian community.**
+**Built for the Obsidian community.**
