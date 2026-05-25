@@ -16,11 +16,13 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 
 ## View
 
-| Plugin Interface | Demo |
-|----------------|------|
-| ![Deadline main view](screenshots/view.png) | ![Deadline demo](screenshots/gg.gif) |
+| Plugin Interface |
+|----------------|
+| ![Deadline main view](screenshots/view.png) |
+| Demo |
+| ![Deadline demo](screenshots/gg.gif) |
 
-**Quick Obsidian link:** [obsidian://show-plugin?id=deadline](obsidian://show-plugin?id=deadline)
+**Quick Obsidian link:** `obsidian://show-plugin?id=deadline`
 
 
 ---
