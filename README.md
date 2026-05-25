@@ -5,12 +5,27 @@
 It is designed to help you plan your day, stay focused, and manage tasks without switching between multiple plugins.
 
 ---
-## view
-- Main plugin view 
-![Deadline main view](screenshots/view.png) 
-![Alt-текст](screenshots/gg.gif)
 
-## Features 
+## Quick Access
+
+> **Open directly in Obsidian:**  
+> `obsidian://show-plugin?id=deadline`  
+> *(Copy and paste this link into your browser or Obsidian)*
+
+---
+
+## View
+
+| Plugin Interface | Demo |
+|----------------|------|
+| ![Deadline main view](screenshots/view.png) | ![Deadline demo](screenshots/gg.gif) |
+
+**Quick Obsidian link:** [obsidian://show-plugin?id=deadline](obsidian://show-plugin?id=deadline)
+
+
+---
+
+## Features
 
 ### Calendar
 - Monthly calendar view
@@ -46,9 +61,6 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 
 ---
 
-
----
-
 ## Installation
 
 ### Method 1: Community Plugins (Recommended)
@@ -61,10 +73,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 ### Method 2: Manual Installation
 1. Download the latest release from  
    https://github.com/Saydullayev017/deadline/releases
-2. Extract the files into:
-   ```
-   ~/.obsidian/plugins/deadline/
-   ```
+2. Extract the files into: ~/.obsidian/plugins/deadline/
 3. Restart Obsidian
 4. Enable **Deadline** in **Settings → Community Plugins**
 
@@ -75,6 +84,7 @@ It is designed to help you plan your day, stay focused, and manage tasks without
 You can open Deadline using:
 - **Command Palette** → `Open Deadline`
 - Ribbon icon (if enabled)
+- **Obsidian link:** `obsidian://show-plugin?id=deadline`
 
 ---
 
@@ -86,7 +96,7 @@ You can open Deadline using:
 - Daily note format: `YYYY-MM-DD.md`
 
 ### Customization
-All UI elements follow Obsidian’s theme variables, ensuring compatibility with:
+All UI elements follow Obsidian's theme variables, ensuring compatibility with:
 - Light and dark themes
 - Custom color schemes
 - Font and scaling preferences
@@ -95,13 +105,15 @@ All UI elements follow Obsidian’s theme variables, ensuring compatibility with
 
 ## File Structure
 
-```
 deadline/
- ├── main.js
- ├── manifest.json
- ├── styles.css
- └── README.md
-```
+├── screenshots/
+│ ├── view.png
+│ └── gg.gif
+├── main.js
+├── manifest.json
+├── styles.css
+└── README.md
+
 
 ---
 
